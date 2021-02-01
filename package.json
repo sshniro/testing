@@ -20,7 +20,9 @@
   "dependencies": {
     "husky": "^4.3.8"
   },
-  "hooks": {
-    "pre-commit": "detect-secrets-launcher *.js"
+  "husky": {
+    "hooks": {
+      "pre-commit": "detect-secrets-launcher src/*"
+    }
   }
 }
